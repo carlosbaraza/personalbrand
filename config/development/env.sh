@@ -6,7 +6,8 @@
 # export MONGO_URL="mongodb://localhost:27017/myapp-development"
 # export ROOT_URL="http://localhost:3000"
 
-export DEBUG=1
-export JASMINE_DEBUG=1
-export VELOCITY_DEBUG=1
-export VELOCITY_DEBUG_MIRROR=1
+# Debugger for Velocity framework
+# export DEBUG=1
+# export JASMINE_DEBUG=1
+# export VELOCITY_DEBUG=1
+# export VELOCITY_DEBUG_MIRROR=1
