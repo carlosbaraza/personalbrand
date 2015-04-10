@@ -12,6 +12,7 @@
 
 // Mixin for generating new styles
 .btn-styles(@btn-color: #555) {
+  background-color: @btn-color;
   border-color: darken(@btn-color, 14%);
 
   &:hover,
@@ -144,3 +145,11 @@
 //
 // Wells
 // --------------------------------------------------
+
+//
+// Forms
+// --------------------------------------------------
+
+.form-control:focus {
+  border-color: @brand-primary;
+}

@@ -2,10 +2,14 @@
 /* LESS Variables and overwriting of Bootstrap variables */
 /*****************************************************************************/
 
-@text-color: lighten(#000, 93.5%);
+@text-color-dark: lighten(#000, 20%);
+@text-color-light: lighten(#000, 93.5%);
+@text-color: @text-color-light;
+
 @body-bg: #262324;
 
 @brand-primary: #cbb677;
+@brand-primary-dark: darken(@brand-primary, 50%);
 
 //== Typography
 //
