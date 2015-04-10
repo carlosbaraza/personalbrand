@@ -1,11 +1,9 @@
-@import "variables";
-@import "bootstrap_variables";
-
 /*****************************************************************************/
 /* main: Style */
 /*****************************************************************************/
-.main {
-}
+
+@import "bootstrap_variables";
+@import "variables";
 
 body, html {
   height: 100%;
@@ -13,32 +11,78 @@ body, html {
 }
 
 body {
-  background: #262324;
-  font-family: source-code-pro, "Courier New", Courier, mono;
+  background: @body-bg;
+  font-family: @font-family-base;
   font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  color: @text-color;
 }
 
-.navbar-brand {
-  font-family: brandon-grotesque,"Helvetica Neue",Helvetica,Arial,sans-serif;
+a {
+  color: @text-color;
+}
+
+a:hover {
+  color: @text-color;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+  font-family: @font-family-sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  font-size: 10px;
 }
 
-.intro {
-  height: 100%;
-  width: 100%;
-  display: table;
-  color: @font-light;
-  background-color: @bk-dark;
+h1 {
+  font-size: 47px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+}
 
-  .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-  }
+h2 {
+  font-size: 13px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
 
-  h1 {
+h3 {
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
-  }
+h4 {
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 5px 10px 10px 0px;
+  margin: 25px 0px 10px 0;
+  border-bottom: 1px solid @text-color;
+}
+
+h5 {
+  font-family: @font-family-base;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+::-moz-selection {
+  color: @text-color;
+  background: @brand-primary;
+}
+
+::selection {
+  color: @text-color;
+  background: @brand-primary;
 }

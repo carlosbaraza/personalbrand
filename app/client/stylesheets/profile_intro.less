@@ -1,0 +1,40 @@
+/*****************************************************************************/
+/* Intro Card: Style */
+/*****************************************************************************/
+
+@import "bootstrap_variables";
+@import "variables";
+
+.intro {
+  color: @text-color;
+  background-color: @body-bg;
+  margin-top: 50px;
+
+  h1 { margin-top: 40px; }
+
+  @media (min-width: @screen-md-min) {
+    h1 { margin-top: 20px; }
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+    display: table;
+    .intro-body {
+      display: table-cell;
+      vertical-align: middle;
+      .container {
+        float: left !important;
+      }
+    }
+  }
+
+  h1, h2 {
+    text-align: center;
+    @media (min-width: @screen-md-min) {
+      text-align: left;
+    }
+  }
+
+  .bullet, .location {
+    color: @brand-primary;
+  }
+}
