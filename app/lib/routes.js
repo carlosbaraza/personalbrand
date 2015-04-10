@@ -5,8 +5,8 @@ Router.configure({
 });
 
 Router.route('/', {
-  name: 'home',
-  controller: 'HomeController',
-  action: 'action',
+  name: 'show',
+  controller: 'ProfileController',
+  action: 'show',
   where: 'client'
 });

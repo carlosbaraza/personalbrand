@@ -1,5 +1,9 @@
 {
   "public": {
+    "mocha_setup_args": {
+       "ui": "tdd",
+       "globals": ["script*"]
+    }
   },
 
   "sample": "value"

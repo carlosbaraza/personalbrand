@@ -5,10 +5,11 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
 iron:router
 less
 twbs:bootstrap
 ian:accounts-ui-bootstrap-3
 accounts-password
+mike:mocha
+velocity:html-reporter@=0.4.2
