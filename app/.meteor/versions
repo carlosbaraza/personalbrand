@@ -77,8 +77,9 @@ twbs:bootstrap@3.3.4
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
-velocity:core@0.4.5
-velocity:html-reporter@0.4.2
+velocity:core@0.5.1
+velocity:html-reporter@0.5.1
+velocity:meteor-internals@1.1.0_6
 velocity:node-soft-mirror@0.3.1
 velocity:shim@0.1.0
 velocity:test-proxy@0.0.4
