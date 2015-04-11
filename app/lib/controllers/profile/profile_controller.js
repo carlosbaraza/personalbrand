@@ -6,5 +6,11 @@ ProfileController = RouteController.extend({
 
   show: function() {
     this.render('ProfileShow');
+  },
+
+  data: function () {
+    return {
+      navbarFixed: true
+    };
   }
 });

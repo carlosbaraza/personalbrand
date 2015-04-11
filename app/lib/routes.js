@@ -10,3 +10,15 @@ Router.route('/', {
   action: 'show',
   where: 'client'
 });
+
+
+/*****************************************************************************/
+/* Admin */
+/*****************************************************************************/
+
+Router.route('/admin', {
+  name: 'adminDashboard',
+  controller: 'AdminController',
+  action: 'dashboard',
+  where: 'client'
+});

@@ -14,3 +14,4 @@ accounts-password
 mike:mocha
 velocity:html-reporter@=0.4.2
 msavin:mongol
+fezvrasta:bootstrap-material-design
