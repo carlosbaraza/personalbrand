@@ -22,4 +22,13 @@
   .dropdown-menu {
     a { color: @brand-primary-dark }
   }
+  @media (max-width: 767px) {
+    .dropdown-menu {
+      a { color: @brand-primary }
+    }
+  }
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 9999px;
 }
