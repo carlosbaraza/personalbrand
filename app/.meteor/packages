@@ -16,3 +16,4 @@ fezvrasta:bootstrap-material-design
 xolvio:cucumber@0.6.0-rc.8
 velocity:html-reporter
 autopublish
+mike:mocha@0.5.3-rc.1

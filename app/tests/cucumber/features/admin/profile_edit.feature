@@ -10,6 +10,10 @@ Feature: Edit profile
     And I log in
     Then take screenshot
 
+  Scenario: Create profile
+    When I navigate to "/admin"
+    Then I should see "Create a new profile"
+
   Scenario: Edit profile
     When I navigate to "/admin"
     And I update my name with "Juan Baraza"
