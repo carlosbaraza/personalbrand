@@ -2,6 +2,13 @@
 /* AdminCard: Event Handlers */
 /*****************************************************************************/
 Template.AdminCard.events({
+  'click #saveCard': function (event) {
+    event.preventDefault();
+
+    name = event.target.form.querySelector('#profileName').value;
+
+    console.log(name);
+  }
 });
 
 /*****************************************************************************/

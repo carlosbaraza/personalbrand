@@ -1,6 +1,5 @@
 Profiles = new Mongo.Collection('profiles');
 
-
 if (Meteor.isServer) {
   Profiles.allow({
     insert: function (userId, doc) {

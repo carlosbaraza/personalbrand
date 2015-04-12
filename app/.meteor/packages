@@ -11,8 +11,8 @@ less
 twbs:bootstrap
 ian:accounts-ui-bootstrap-3
 accounts-password
-velocity:html-reporter@=0.5.1
 msavin:mongol
 fezvrasta:bootstrap-material-design
-velocity:core@=0.5.1
-mike:mocha
+xolvio:cucumber@0.6.0-rc.8
+velocity:html-reporter
+autopublish
