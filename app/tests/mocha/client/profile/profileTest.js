@@ -23,22 +23,24 @@ if (!(typeof MochaWeb === 'undefined')){
         });
 
         it("allows the creation of a profile", function () {
-          Profiles.insert({
-            fullName: 'Carlos Baraza'
-          });
+          createValidProfile();
           chai.assert.equal(Profiles.find({}).count(), 1);
         });
 
         it("does not allow the creation of multiple profiles", function () {
-          Profiles.insert({
-            fullName: 'Carlos Baraza'
-          });
-          Profiles.insert({
-            fullName: 'Carlos Baraza'
-          });
+          createValidProfile();
+          createValidProfile();
           chai.assert.equal(Profiles.find({}).count(), 1);
         });
 
+      });
+
+      xit("validates the userId", function () {
+        Profiles.insert({
+          fullName: 'Carlos Baraza'
+        }, function (err) {
+          chai.assert.not_equal(err, undefined);
+        });
       });
 
       xit("stores the userId", function () {});
@@ -54,6 +56,17 @@ if (!(typeof MochaWeb === 'undefined')){
         Profiles.remove(doc._id);
       });
     });
+
+    createValidProfile = function (callback) {
+      errors = null;
+      Profiles.insert({
+        fullName: "Carlos Baraza"
+      }, function (err) {
+        if (typeof callback !== "undefined") callback(err);
+        errors = err;
+      });
+      return errors === undefined;
+    }
 
   });
 }

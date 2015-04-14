@@ -13,6 +13,9 @@ Feature: Edit profile
   Scenario: Create profile
     When I navigate to "/admin"
     Then I should see "Create a new profile"
+    And I should see "Choose your URL:"
+    When I select the url "carlosbaraza"
+    And I click on "Start the magic"
 
   Scenario: Edit profile
     When I navigate to "/admin"

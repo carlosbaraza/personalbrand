@@ -19,6 +19,13 @@
         .click("button#login-buttons-password");
     });
 
+    this.Given(/^I click on "([^"]*)"$/, function (selector) {
+      return this.browser
+        .click(selector, function (err) {
+          err.should.equal('undefined');
+        });
+    })
+
     this.When(/^I navigate to "([^"]*)"$/, function (relativePath) {
       // WebdriverIO supports Promises/A+ out the box, so you can return that too
       return this.browser. // this.browser is a pre-configured WebdriverIO + PhantomJS instance
@@ -30,6 +37,14 @@
       return this.browser.
         waitForVisible('h1'). // WebdriverIO chain-able promise magic
         getTitle().should.become(expectedTitle);
+    });
+
+    this.Then(/^I should see "([^"]*)"$/, function (expectedTitle) {
+      return this.browser.
+        isVisible('//*[text()="' + expectedTitle + '"]', function (err, isVisible) {
+          if (err !== 'undefined') return err;
+          isVisible.should.equal(true);
+        });
     });
 
     this.Then(/^take screenshot$/, function () {
